@@ -1,0 +1,122 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans JP', sans-serif !important;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none !important;
+}
+*{
+    box-sizing: border-box;
+}
+section {
+    display: block;
+}
+.limpa{
+    clear:both;
+}
+.bgy-home{
+    width: 100%;
+    padding: 110px 3%;
+    text-align: center;
+    background-color: #232222;
+    background-image: url(/files/Universe.jpg);
+    background-size: cover;
+    background-position: 1% 1%;
+}
+.bgy-home h1, .bgy-home h2{
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+    margin: 30px 0;
+}
+.bgy-home span {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+#git-pai{
+    text-transform: uppercase;
+    margin: 30px 0;
+    display: inline-block;
+    padding: 3px 3%;
+    border: 2px solid rgba(230,230,230,0.92);
+}
+#git-pai:hover{
+    transition: 2s;
+    filter: invert(0.7);
+    border: 2px solid rgba(133, 127, 127, 0.92);
+}
+.fa {
+    font-size: 1.3333333333em !important;
+}
+.btn:hover{
+    background-color: #d83737;
+    transition: all ease 0.3s;
+}
+.text strong span{
+    color: #f76363;
+}
+@media(max-width:780px){
+    .text strong{
+        font-size: 2rem;
+        line-height: 40px;
+        padding: 0px 10px;
+    }
+    .text p{
+        font-size: 1rem;
+    }
+    .btn{
+        width:180px;
+        height: 44px;
+    }
+}
+@media(max-width:664px){
+    .bgy-home{
+        background-position: 50% 50%;
+    }
+}
+@media(max-width:520px){
+    .text strong{
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+    .text p{
+        width:90%;
+    }
+    .btn{
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+}
+@media(max-width:400px){
+    .text strong{
+        font-size: 1.3rem;
+        line-height: 30px;
+    }
+}
+
+@media(max-width:250px){
+    .bgy-home span{
+        font-size: 10px !important;
+    }
+    #auto-texto{
+        font-size: 10px !important;
+    }
+}
+
+@media(max-width:300px){
+    .bgy-home span{
+        font-size: 13px !important;
+    }
+    #auto-texto{
+        font-size: 12px !important;
+    }
+}
+/*meu*/
