@@ -1,122 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Noto Sans JP', sans-serif !important;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
-a{
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h1, h2, span{
+    color: #fff;
+}
+
+h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
     text-decoration: none;
+    font-size: 1.5rem;
 }
+
 a:link{
     text-decoration: none;
 }
 a:visited{
     text-decoration: none !important;
 }
-*{
-    box-sizing: border-box;
-}
-section {
-    display: block;
-}
-.limpa{
-    clear:both;
-}
-.bgy-home{
+
+.bg-home{
     width: 100%;
-    padding: 110px 3%;
-    text-align: center;
+    padding: 110px 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #232222;
     background-image: url(/files/Universe.jpg);
     background-size: cover;
     background-position: 1% 1%;
+    background-attachment:fixed;
 }
-.bgy-home h1, .bgy-home h2{
-    font-size: 36px;
+
+.bg-home > span {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.bg-home > span > h1 {
+    margin: 30px 1rem;
+}
+
+.bg-home > div.buttonGit {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+}
+
+.bg-home > div.buttonGit > a {
     color: #fff;
-    font-weight: 400;
-    margin: 30px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
 }
-.bgy-home span {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 400;
+.bg-home > div.buttonGit > a:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 0rem;
+	z-index: -2;
 }
-#git-pai{
-    text-transform: uppercase;
-    margin: 30px 0;
-    display: inline-block;
-    padding: 3px 3%;
-    border: 2px solid rgba(230,230,230,0.92);
+
+.bg-home > div.buttonGit > a:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	background-color: #fff;
+	transition: all .3s;
+	border-radius: 0rem;
+	z-index: -1;	
 }
-#git-pai:hover{
-    transition: 2s;
-    filter: invert(0.7);
-    border: 2px solid rgba(133, 127, 127, 0.92);
+
+.bg-home > div.buttonGit > a:hover{
+    color: black;
 }
-.fa {
-    font-size: 1.3333333333em !important;
+
+.bg-home > div.buttonGit > a:hover:before{
+    width: 100%;
 }
-.btn:hover{
-    background-color: #d83737;
-    transition: all ease 0.3s;
+
+.bg-home > div.buttonGit > a > h3 {
+    padding-left: 7px;
 }
-.text strong span{
-    color: #f76363;
-}
-@media(max-width:780px){
-    .text strong{
-        font-size: 2rem;
-        line-height: 40px;
-        padding: 0px 10px;
+
+@media(max-width: 1080px){
+    html {
+        font-size: 93.75%;
     }
-    .text p{
-        font-size: 1rem;
-    }
-    .btn{
-        width:180px;
-        height: 44px;
-    }
-}
-@media(max-width:664px){
-    .bgy-home{
+    .bg-home {
+        background-size:cover;
         background-position: 50% 50%;
+        background-attachment:fixed;
+    }
+}
+
+@media(max-width:780px){
+    html {
+        font-size: 87.5%;
+    }
+    .bg-home {
+        background-size:cover;
+        background-position: 50% 50%;
+        background-attachment:unset;
     }
 }
 @media(max-width:520px){
-    .text strong{
-        font-size: 1.6rem;
-        line-height: 30px;
-    }
-    .text p{
-        width:90%;
-    }
-    .btn{
-        margin-top: 20px;
-        font-size: 0.9rem;
+    html {
+        font-size: 80.5%;
     }
 }
-@media(max-width:400px){
-    .text strong{
-        font-size: 1.3rem;
-        line-height: 30px;
-    }
-}
-
 @media(max-width:250px){
-    .bgy-home span{
-        font-size: 10px !important;
-    }
-    #auto-texto{
-        font-size: 10px !important;
+    html {
+        font-size: 70.5%;
     }
 }
-
-@media(max-width:300px){
-    .bgy-home span{
-        font-size: 13px !important;
-    }
-    #auto-texto{
-        font-size: 12px !important;
-    }
-}
-/*meu*/
